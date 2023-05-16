@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 *{
     background-color: #f0b2f0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
 }
-
+#menu{
+    text-align: center;
+}
 #menu li {
     
     display: inline-block; 
@@ -22,7 +26,6 @@
 }
 
 header h2 {
-    font-size:60px; 
     text-align: center;
 }
 
@@ -59,8 +62,59 @@ section iframe{
 
 /* PÁGINA DE CONTATO: */
 
-#map-container {
+.container-contact{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.title-contact{
+    text-align: center;
+}
+
+.container-info-container{   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+.container-inputs-contact{
     
-    width: 50%; /* define a largura da div */
-    margin: 0 auto; /* centraliza a div */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input{
+    padding-left: 20px;
+    border: solid #f772f7;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    height: 150px; /* Defina a altura desejada */
+    max-width: 500px; /* Defina a largura máxima desejada */
+    min-width: 200px; /* Defina a largura mínima desejada */
+    resize: vertical; /* Permite ao usuário redimensionar a altura verticalmente */
   }
+
+.btn{
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: #f772f7;
+    cursor: pointer;
+}
